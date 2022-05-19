@@ -2,7 +2,6 @@ const navigation = document.querySelector('.menu-bars');
 const body = document.querySelector('body');
 
 navigation.addEventListener('click', () => {
-  console.log('clicekd');
   body.classList.toggle('open-menu');
 });
 

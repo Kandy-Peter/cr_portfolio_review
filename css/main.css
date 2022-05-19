@@ -65,10 +65,17 @@ main {
 .open-menu .close-btn {
   display: flex;
   color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.open-menu .open-btn {
+.open-menu .open-btn,
+.open-menu #logo {
   display: none;
+  cursor: pointer;
 }
 
 #desktop-nav,
@@ -83,15 +90,24 @@ main {
   left: 0;
   bottom: 0;
   height: 100vh;
-  padding-top: 4rem;
+  padding: 1rem;
+}
+
+#desktop-nav ul li {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.836);
+  text-align: left;
 }
 
 .open-menu #desktop-nav,
 .open-menu #desktop-nav ul {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   z-index: 100;
-  background-color: #3c3a39da;
+  background-color: #3c3a39;
 }
 
 #intro,
